@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cyber & Data Law Guide</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#60a5fa;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,#071028 0%, #081226 100%);color:#e6eef6}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid rgba(255,255,255,0.03)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:#032; font-weight:700}
+    nav{display:flex;gap:10px;flex-wrap:wrap}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px}
+    nav a.active, nav a:hover{background:var(--glass);color:#e6eef6}
+    main{display:grid;grid-template-columns:320px 1fr;gap:20px;padding:28px}
+    aside{position:sticky;top:22px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .toc{display:flex;flex-direction:column;gap:8px}
+    .toc a{color:var(--muted);text-decoration:none;padding:8px;border-radius:8px}
+    .toc a:hover{color:#fff;background:var(--glass)}
+    section{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    h1,h2{margin:6px 0}
+    p{color:var(--muted);line-height:1.6}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);color:var(--muted);font-size:13px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+    .card{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.012)}
+    footer{padding:18px 28px;border-top:1px solid rgba(255,255,255,0.03);text-align:center;color:var(--muted)}
+    .search{display:flex;gap:8px;align-items:center}
+    input.search-input{background:transparent;border:1px solid rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;color:#e6eef6}
+    pre.snippet{background:#061126;padding:12px;border-radius:8px;color:#cfe9ff;overflow:auto}
+    @media (max-width:900px){main{grid-template-columns:1fr; padding:18px}aside{order:2} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">CL</div>
+      <div>
+        <div style="font-weight:700">CyberLaw Guide</div>
+        <div style="font-size:12px;color:var(--muted)">Practical summaries for compliance & awareness</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:12px;align-items:center">
+      <div class="search">
+        <input class="search-input" placeholder="Search acts, keywords..." id="siteSearch" />
+      </div>
+      <nav id="topNav">
+        <a href="#home" class="active">Home</a>
+        <a href="#gdpr">GDPR</a>
+        <a href="#computer-misuse">Computer Misuse</a>
+        <a href="#online-safety">Online Safety</a>
+        <a href="#investigatory">Investigatory Powers</a>
+        <a href="#ecommerce">E-Commerce</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <aside>
+      <div style="font-weight:700;margin-bottom:8px">Quick links</div>
+      <div class="toc">
+        <a href="#home">Home</a>
+        <a href="#gdpr">GDPR & Data Protection Act 2018</a>
+        <a href="#computer-misuse">Computer Misuse Act 1990</a>
+        <a href="#online-safety">Online Safety Act 2023</a>
+        <a href="#investigatory">Investigatory Powers Act 2016</a>
+        <a href="#telecoms">Telecommunications (Security) Act 2021</a>
+        <a href="#ecommerce">E-Commerce Regulations 2002</a>
+        <a href="#copyright">Copyright & Digital Economy</a>
+        <a href="#foi">Freedom of Information Act 2000</a>
+        <a href="#nis2">NIS2 Directive (EU)</a>
+        <a href="#standards">Standards & PCI</a>
+        <a href="#contact">Contact & Reporting</a>
+      </div>
+    </aside>
+
+    <div>
+      <section id="home">
+        <h1>Welcome — Cyber & Data Law Guide</h1>
+        <p>This site collects short, practical summaries of key UK & EU laws, standards, and regulations that apply to IT, cybersecurity, data protection and online services. Use it for education, internal policy foundations, or as a starting point while building compliance pages for your organisation.</p>
+        <div class="grid">
+          <div class="card">
+            <strong>Scope</strong>
+            <p>UK & EU focused (GDPR/UK-GDPR, DPA 2018) with major supporting acts. Not legal advice — consult a qualified lawyer for binding guidance.</p>
+          </div>
+          <div class="card">
+            <strong>Useful for</strong>
+            <p>Company privacy pages, security policy overviews, staff training handouts, and website legal pages.</p>
+          </div>
+          <div class="card">
+            <strong>Extras</strong>
+            <p>Includes references to standards like ISO/IEC 27001 and PCI-DSS for technical controls and payment compliance.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gdpr" style="margin-top:16px">
+        <h2>GDPR — General Data Protection Regulation (EU) & UK-GDPR</h2>
+        <img src="data protection.jpg" alt="data protection" style="width:100%;border-radius:8px;margin:8px 0;"/>
+        <p>The GDPR and Data Protection Act 2018 regulate how personal data is collected, used, stored and shared by organisations processing information about UK/EU residents. These laws require transparency about processing activities, purpose limitation so data is used only for clear reasons, and minimisation so only necessary data is kept. Organisations must implement appropriate technical and organisational measures to secure data, maintain records of processing activities and perform Data Protection Impact Assessments when processing risks are high. Data subjects have enforceable rights such as access, rectification, erasure, and portability, and regulators can impose significant fines for serious breaches.</p>
+        <ul>
+          <li>Enforces lawful bases for processing personal data (e.g. consent, contract, legitimate interests).</li>
+          <li>Gives individuals rights including access, erasure ("right to be forgotten"), portability and objection to processing.</li>
+          <li>Requires strong security controls, DPIAs for high-risk processing and mandatory breach reporting to regulators.</li>
+        </ul>
+        <p><strong>Conclusion:</strong> GDPR ensures organisations are accountable for personal data and helps maintain public trust through enforceable individual rights and security obligations.</p>
+      </section>
+
+      <section id="computer-misuse" style="margin-top:16px">
+        <h2>Computer Misuse Act 1990</h2>
+        <img src="misuse act.jpg" alt="cyber threats" style="width:100%;border-radius:8px;margin:8px 0;"/>
+        <p>The Computer Misuse Act 1990 criminalises unauthorised access to computer systems and associated actions that harm the confidentiality, integrity or availability of data. It covers a range of offences from simple unauthorised access and intent to commit further offences, to serious acts such as the creation and distribution of malware, denial-of-service attacks and tampering with data. Over time courts and lawmakers have interpreted and updated the framework to address evolving threats like ransomware and botnets, while balancing criminal liability against legitimate security research.</p>
+        <ul>
+          <li>Criminalises unauthorised access to computer systems and unauthorised modifications of data.</li>
+          <li>Prohibits making, supplying or obtaining malware for use in offences.</li>
+          <li>Applies to attacks that disrupt services (e.g., DDoS), data tampering and ransomware deployment.</li>
+        </ul>
+        <p><strong>Conclusion:</strong> The Act provides legal tools to deter and prosecute malicious cyber activity while encouraging responsible security practices.</p>
+      </section>
+
+      <section id="online-safety" style="margin-top:16px">
+        <h2>Online Safety Act 2023</h2>
+        <img src="online safety.jpg" alt="online safety" style="width:100%;border-radius:8px;margin:8px 0;"/>
+        <p>The Online Safety Act places duties on operators of online platforms to identify, assess and mitigate risks posed by illegal and harmful content — particularly where it impacts children and other vulnerable groups. Platforms are required to take proportionate steps to prevent the dissemination of illegal content, to offer tools and settings that protect users, and to be transparent about content moderation and recommendation systems. Ofcom has been given enforcement powers to ensure compliance and to impose fines or other sanctions for systemic failings.</p>
+        <ul>
+          <li>Obliges platforms to proactively manage illegal content and serious harms affecting children and vulnerable users.</li>
+          <li>Requires safety-by-design features, clear reporting routes and moderation transparency reporting.</li>
+          <li>Enables regulator (Ofcom) enforcement including fines, compliance notices and publicity orders.</li>
+        </ul>
+        <p><strong>Conclusion:</strong> The Act shifts responsibility onto platforms to make their services safer and more transparent for users, especially minors.</p>
+      </section>
+
+      <section id="investigatory" style="margin-top:16px">
+        <h2>Investigatory Powers Act 2016</h2>
+        <img src="investigation.avif" alt="surveillance law" style="width:100%;border-radius:8px;margin:8px 0;"/>
+        <p>The Investigatory Powers Act provides a statutory framework for the lawful interception of communications, equipment interference and the retention of communications data by public authorities for national security and crime prevention purposes. The Act centralises and clarifies authorities' powers while introducing oversight mechanisms such as judicial authorisations and independent commissioners to reduce the risk of misuse. It remains controversial due to concerns about bulk data collection and the balance between privacy and public safety.</p>
+        <ul>
+          <li>Authorises lawful interception, targeted and bulk data acquisition under warrant or judicial approval.</li>
+          <li>Includes safeguards such as oversight by judicial commissioners and requirements for proportionality and necessity.</li>
+          <li>Raises public policy debates regarding privacy, mass retention of communications data and transparency.</li>
+        </ul>
+        <p><strong>Conclusion:</strong> The Act seeks to balance national security needs with safeguards to protect citizens' privacy, though debates about scope and oversight persist.</p>
+      </section>
+
+      <section id="telecoms" style="margin-top:16px">
+        <h2>Telecommunications (Security) Act 2021</h2>
+        <img src="telecom.avif" alt="telecoms security" style="width:100%;border-radius:8px;margin:8px 0;"/>
+        <p>The Telecommunications (Security) Act enhances the security and resilience requirements for public electronic communications networks and service providers. It focuses on managing supply-chain risks, reducing dependence on high-risk vendors, and ensuring operators carry out risk assessments and implement proportionate technical controls. Regulators can require remedial actions and levy fines where operators fail to manage or mitigate cybersecurity risks to national infrastructure.</p>
+        <ul>
+          <li>Mandates security duties for telecom operators, including risk assessments and incident management.</li>
+          <li>Reduces supply-chain risk exposure by restricting use of high-risk vendors and requiring mitigations.</li>
+          <li>Gives regulators enforcement powers to demand remedial action and impose penalties.</li>
+        </ul>
+        <p><strong>Conclusion:</strong> The Act strengthens national telecom resilience by requiring proactive security and better supplier governance.</p>
+      </section>
+
+      <section id="ecommerce" style="margin-top:16px">
+        <h2>E-Commerce Regulations 2002 & Electronic Communications Act 2000</h2>
+        <img src="ecommace.webp" alt="ecommarce" style="width:100%;border-radius:8px;margin:8px 0;"/>
+        <p>The E-Commerce Regulations 2002 and the Electronic Communications Act 2000 provide the legal basis for electronic trading and communications, ensuring consumer protections and the validity of electronic contracts and signatures. These rules require businesses to provide clear information to consumers, maintain transparent commercial communications and enable enforceable electronic transactions. They are essential for online retailers, service providers and platforms operating across borders.</p>
+        <ul>
+          <li>Requires clear pre-contractual information (identity, pricing, charges, refund terms) for online sellers.</li>
+          <li>Regulates commercial electronic communications, advertising and ensures consent for marketing messages.</li>
+          <li>Recognises electronic signatures and supports secure electronic contracting and records.</li>
+        </ul>
+        <p><strong>Conclusion:</strong> These laws underpin trust in online commerce by protecting consumers and validating digital transactions.</p>
+      </section>
+
+      <section id="copyright" style="margin-top:16px">
+        <h2>Copyright, Designs & Patents Act 1988 & Digital Economy Act 2017</h2>
+        <img src="copyright.webp" alt="copyright" style="width:100%;border-radius:8px;margin:8px 0;"/>
+        <p>The Copyright, Designs and Patents Act protects creators' rights over original works, including software, images, audio and video, by granting exclusive rights to copy, adapt and distribute. The Digital Economy Act complements this by addressing online enforcement, takedown procedures and measures to deter large-scale infringement. Together they provide a framework for rights management, licensing and remedies against unauthorised use.</p>
+        <ul>
+          <li>Grants creators exclusive rights to reproduce, adapt and distribute their works and enables civil and criminal remedies for infringement.</li>
+          <li>Provides mechanisms for notice-and-takedown and court orders targeting large-scale piracy under the Digital Economy Act.</li>
+          <li>Supports licensing models and exceptions (e.g., fair dealing) for education, quotation and criticism.</li>
+        </ul>
+        <p><strong>Conclusion:</strong> These laws protect intellectual property and help maintain fair markets for creators and businesses online.</p>
+      </section>
+
+      <section id="foi" style="margin-top:16px">
+        <h2>Freedom of Information Act 2000</h2>
+        <img src="freedom.webp" alt="freedom of information" style="width:100%;border-radius:8px;margin:8px 0;"/>
+        <p>The Freedom of Information Act gives the public the right to access recorded information held by public authorities, promoting transparency and accountability. Public bodies must handle requests within statutory timescales, publish certain information proactively and apply exemptions when disclosure would harm national security, personal data or commercial interests. FOI obligations are central to open governance and public confidence in institutions.</p>
+        <ul>
+          <li>Allows individuals to request information from public authorities within statutory time limits (normally 20 working days).</li>
+          <li>Requires public bodies to publish key information proactively and maintain publication schemes.</li>
+          <li>Includes exemptions (e.g., national security, personal data, commercial sensitivity) that permit refusal in specified circumstances.</li>
+        </ul>
+        <p><strong>Conclusion:</strong> FOI increases government transparency while balancing legitimate confidentiality and privacy concerns.</p>
+      </section>
+
+      <section id="nis2" style="margin-top:16px">
+        <h2>NIS2 Directive (EU) & Critical Services</h2>
+        <img src="nis2.webp" alt="NIS2 Directive" style="width:100%;border-radius:8px;margin:8px 0;"/>
+        <p>The NIS2 Directive expands and tightens cybersecurity requirements across EU Member States for operators of essential and important entities in sectors like energy, transport, health, finance and digital infrastructure. It raises expectations for governance, incident reporting, supply chain security and accountability at board level. Organisations falling within scope must adopt stronger risk management measures and cooperate with national authorities to improve the overall resilience of European critical services.</p>
+        <ul>
+          <li>Extends scope to more sectors and organisations, increasing the number of entities subject to mandatory cybersecurity rules.</li>
+          <li>Requires timely incident reporting, coordinated response and cross-border cooperation among Member States.</li>
+          <li>Introduces governance obligations and accountability for senior management regarding cyber risk management.</li>
+        </ul>
+        <p><strong>Conclusion:</strong> NIS2 raises the baseline for cyber resilience across Europe and drives greater corporate accountability for critical services.</p>
+      </section>
+
+      <section id="standards" style="margin-top:16px">
+        <h2>Standards: ISO/IEC 27001, PCI-DSS</h2>
+        <img src="ISO.png" alt="standards" style="width:100%;border-radius:8px;margin:8px 0;"/>
+        <p>ISO/IEC 27001 and PCI-DSS are widely used security standards that help organisations structure their information security programmes and protect payment card data respectively. While they are not laws, many customers, partners and regulators expect compliance with these standards as evidence of reasonable security practices. Implementing them supports risk management, incident readiness and regulatory alignment.</p>
+        <ul>
+          <li>ISO/IEC 27001 specifies requirements for an Information Security Management System (ISMS) to manage risks systematically.</li>
+          <li>PCI-DSS mandates technical and operational controls to protect cardholder data for organisations processing payments.</li>
+          <li>Adoption demonstrates due diligence and can reduce exposure to breaches and regulatory scrutiny.</li>
+        </ul>
+        <p><strong>Conclusion:</strong> Standards provide practical frameworks to improve security posture and demonstrate compliance to stakeholders.</p>
+      </section>
+
+      <section id="contact" style="margin-top:16px">
+        <h2>Contact, Reporting & Useful Practices</h2>
+        <img src="contact.webp" alt="contact" style="width:100%;border-radius:8px;margin:8px 0;"/>
+        <p>If a breach or security incident occurs, organisations should follow a documented incident response plan that covers detection, containment, eradication, recovery and lessons learned. Notify affected individuals and regulators (e.g., ICO in the UK) when required by law, and preserve forensic evidence for investigation. Maintain clear public-facing contact channels for privacy and security queries, and keep records of decisions and communications to demonstrate accountability.</p>
+        <ul>
+          <li>Have an incident response plan with roles, escalation paths and communication templates.</li>
+          <li>Report qualifying data breaches to the relevant supervisory authority and notify affected data subjects where necessary.</li>
+          <li>Keep incident logs, preserve evidence and perform post-incident reviews to improve controls.</li>
+        </ul>
+        <p><strong>Conclusion:</strong> Preparedness, transparent reporting and continuous improvement are key to reducing impact and rebuilding trust after incidents.</p>
+        <div class="grid" style="margin-top:12px">
+          <div class="card">
+            <strong>Incident Response</strong>
+            <img src="investigation.avif" alt="incident response" style="width:100%;border-radius:8px;margin:8px 0;"/>
+            <p>Have triage, containment, eradication and lessons-learned steps defined.</p>
+          </div>
+          <div class="card">
+            <strong>Data Breach Reporting</strong>
+            <img src="data breach.jpg" alt="data breach reporting" style="width:100%;border-radius:8px;margin:8px 0;"/>
+            <p>Record breach details, impact assessments, and notifications to affected parties where required.</p>
+          </div>
+          <div class="card">
+            <strong>Policy Templates</strong>
+            <img src="policy.jpg" alt="policy templates" style="width:100%;border-radius:8px;margin:8px 0;"/>
+            <p>Use this site as a base to create privacy policies, security policies and terms of use.</p>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:16px">
+        <h2>Disclaimer</h2>
+        <p>This site provides summaries for educational and informational purposes only. It does not constitute legal advice. For specific legal obligations, consult a qualified lawyer or regulatory guidance applicable to your organisation.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    © CyberLaw Guide — generated content. Want this exported as a single HTML file or converted into a React + Tailwind app?
+    made by Urooj
+  </footer>
+
+  <script>
+    // basic nav highlighting & search
+    document.addEventListener('click', function(e){ if(e.target.tagName==='A' && e.target.getAttribute('href') && e.target.getAttribute('href').startsWith('#')){ document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active')); const inTop = document.querySelector('nav a[href="'+e.target.getAttribute('href')+'"]'); if(inTop) inTop.classList.add('active'); }});
+    document.getElementById('siteSearch').addEventListener('input', function(){ const q=this.value.trim().toLowerCase(); document.querySelectorAll('section').forEach(sec=>{ const text = sec.innerText.toLowerCase(); sec.style.display = q? (text.includes(q)? 'block' : 'none') : 'block'; }); });
+  </script>
+</body>
+</html>
